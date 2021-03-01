@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceGame</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='gamess.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <h1>
+            Let's Go!
+        </h1>
+        <h2 class="player1">player1</h2>
+        <h2 class="player2">player2</h2>
+        <div>
+            <img src="{{url_for('static',filename='imagesss/1.png')}}" alt="" height="300px" width="300px">
+            <img src="{{url_for('static',filename='imagesss/2.png')}}" alt="" height="300px" width="300px">
+        </div>
+        <button type="button" class="btn1">Play Again</button>
+        <h2>Details:{{name}}</h2>
+        <script src="{{url_for('static',filename='game.js')}}"></script>
+        
+</body>
+</html>
